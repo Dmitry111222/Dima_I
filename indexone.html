@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="/home/vue-qsg/node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="./style/style.css">
+  <script src="/home/vue-qsg/node_modules/vue-router/dist/vue-router.js"></script>
+  <script src = "/home/vue-qsg/node_modules/vue/dist/vue.js"></script>
+  <script src = "/home/vue-qsg/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+ <div class="wrapper" id="app">
+  <div class="header">
+    <div class="page">
+      <div class="logo">
+        <div class="custom"  >
+        <p><a href="indexone.html">Антон Завьялов<br /><span>персональный сайт музыканта</span></a></p>
+        </div>
+      </div>
+      <div class="header-right">
+        <div class="social-block">
+          <div class="custom">
+            <ul>
+              <li><a href="https://www.facebook.com" target="_blank"><img src="./img/social/fb.png" alt="Facebook" /></a></li>
+              <li><a href="https://vk.com/ant_zavyalov" target="_blank"><img src="./img/social/vk.png" alt="Vkontakte" /></a></li>
+              <li><a href="https://www.youtube.com/channel/UCMhknVAmsYfPki5DhtxrOXg" target="_blank"><img src="./img/social/yt.png" alt="Youtube" /></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="picture">
+    <img src="./img/glavn.png"
+    style="left: -350px;">
+    </div>
+    <div class="content-inner">
+      <div class="left">
+        <div class="moduletable_menu">
+          <ul class="nav menu">
+            <li class="item-103 default current active">
+              <router-link to="/home">
+              <img src="./img/menu/home.png" alt="Главная"/>
+              <span class="image-title">Главная</span>
+              </router-link>
+            </li>
+            <li class="item-125">
+              <router-link to="/bio">
+              <img src="./img/menu/bio.png" alt="Биография" />
+              <span class="image-title">Биография</span>
+              </router-link>
+              </li>
+            <li class="item-126">
+              <router-link to="/">
+              <img src="./img/menu/music.png" alt="Музыка" />
+              <span class="image-title">Музыка</span>
+              </router-link>
+            </li>
+            <li class="item-127">
+              <router-link to="/">
+              <img src="./img/menu/video.png" alt="Видео" />
+              <span class="image-title">Видео</span>
+              </router-link>
+              </li>
+            <li class="item-129">
+              <router-link to="/">
+              <img src="./img/menu/text.png" alt="Тексты песен" />
+              <span class="image-title">Тексты песен</span>
+              </router-link>
+            </li>
+            <li class="item-130">
+              <router-link to="/">
+              <img src="./img/menu/disco.png" alt="Дискография" />
+              <span class="image-title">Дискография</span>
+              </router-link>
+            </li>
+            <li class="item-131">
+              <router-link to="/">
+              <img src="./img/menu/photo.png" alt="Фотогалерея" />
+              <span class="image-title">Фотогалерея</span>
+              </router-link>
+            </li>
+            <li class="item-132">
+              <router-link to="/">
+              <img src="./img/menu/consert.png" alt="Концерты" />
+              <span class="image-title">Концерты</span>
+              </<router-link>
+            </li>
+            <li class="item-133">
+              <router-link to="/">
+              <img src="./img/menu/news.png" alt="Новости" />
+              <span class="image-title">Новости</span>
+              </router-link>
+            </li>
+            <li class="item-134">
+              <router-link to="/">
+              <img src="./img/menu/awards.png" alt="Награды" />
+              <span class="image-title">Награды</span>
+              </router-link>
+            </li>
+            <li class="item-137">
+               <router-link to="/contacts">
+               <img src="./img/menu/contacts.png" alt="Контакты" />
+               <span class="image-title">Контакты</span>
+               </router-link>
+            </li>
+          </ul>
+        </div>
+        <router-view></router-view>
+      </div>
+    </div>
+<script src="build.js"></script>
+</body>
+</html>
